@@ -1,0 +1,58 @@
+{
+  "pry": {
+    "prefix": "pry",
+    "body": "binding.pry"
+  },
+
+  "dop": {
+    "prefix": "dop",
+    "body": "do |${1:x}|\n  $2\nend$0"
+  },
+
+  "frozen_string_literal": {
+    "prefix": "fsl",
+    "body": "# frozen_string_literal: true\n"
+  },
+
+  "translate": {
+    "prefix": "tra",
+    "body": ["t('.$1')$2"],
+    "description": "Translate text."
+  },
+
+  "describe": {
+    "prefix": "desc",
+    "body": "describe '${1:description}' do\n  $2\nend$0"
+  },
+
+  "context": {
+    "prefix": "con",
+    "body": "context '${1:context}' do\n  $2\nend$0"
+  },
+
+  "it": {
+    "prefix": "it",
+    "body": "it '${1:does}' do\n  $2\nend$0"
+  },
+
+  "itis": {
+    "prefix": "itis",
+    "body": "it { is_expected.${1:to} $2 }$0"
+  },
+
+  "let": {
+    "prefix": "let",
+    "body": "let(:${1:symbol}) { $2 }$0"
+  },
+
+  "let!": {
+    "prefix": "let!",
+    "body": "let!(:${1:symbol}) { $2 }$0"
+  },
+
+  "subject": {
+    "prefix": "sub",
+    "body": "subject { described_class.${1:method} }$0"
+  }
+}
+
