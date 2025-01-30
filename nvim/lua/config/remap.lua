@@ -1,11 +1,5 @@
 vim.g.mapleader = ' '
 
--- Sane cut/paste
-vim.keymap.set('n', "p", [["0p]])
-vim.keymap.set('n', "P", [["0P]])
-vim.keymap.set('n', "y", [["0y]])
-vim.keymap.set('n', "d", [["0d]])
-
 -- Window navigation
 vim.keymap.set('n', '<C-j>', '<C-W>j', { silent = true })
 vim.keymap.set('n', '<C-k>', '<C-W>k', { silent = true })
