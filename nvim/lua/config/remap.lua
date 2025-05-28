@@ -1,5 +1,9 @@
 vim.g.mapleader = ' '
 
+-- Saving
+vim.keymap.set('n', '<C-s>', '<Cmd>:up<CR>')
+vim.keymap.set('i', '<C-s>', '<C-O>:up<CR>')
+
 -- Window navigation
 vim.keymap.set('n', '<C-j>', '<C-W>j', { silent = true })
 vim.keymap.set('n', '<C-k>', '<C-W>k', { silent = true })

@@ -3,10 +3,17 @@ local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()
 
+config.scrollback_lines = 1000000
+
+-- Font options.
 config.font = wezterm.font('CaskaydiaCove Nerd Font Mono')
 config.font_size = 18.0
+config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' } -- Disable font ligatures.
+
+-- Theming
 config.color_scheme = "Catppuccin Mocha"
 
+-- Keybinds.
 config.leader = { key = ' ', mods = 'CTRL', timeout_milliseconds = 1000 }
 
 MODIFIER = 'CTRL|SHIFT'
