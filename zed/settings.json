@@ -52,5 +52,14 @@
 
   // KEYMAP
   "base_keymap": "Atom",
-  "multi_cursor_modifier": "cmd_or_ctrl"
+  "multi_cursor_modifier": "cmd_or_ctrl",
+
+  // -- LANGUAGE SPECIFIC SETTINGS -- //
+
+  // RUBY
+  "languages": {
+    "Ruby": {
+      "language_servers": ["ruby-lsp", "!solargraph", "!rubocop", "..."]
+    }
+  }
 }

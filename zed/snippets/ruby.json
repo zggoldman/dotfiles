@@ -1,0 +1,100 @@
+{
+  /* Core */
+  "pry": {
+    "prefix": "pry",
+    "body": "binding.pry"
+  },
+
+  "do": {
+    "prefix": "do",
+    "body": "do\n  $1\nend$0"
+  },
+
+  "dop": {
+    "prefix": "dop",
+    "body": "do |${1:x}|\n  $2\nend$0"
+  },
+
+  "frozen_string_literal": {
+    "prefix": "fsl",
+    "body": "# frozen_string_literal: true\n"
+  },
+
+  "sorbet_preamble": {
+    "prefix": "sorb",
+    "body": "# typed: strict\n# frozen_string_literal: true\n"
+  },
+
+  "class": {
+    "prefix": "class",
+    "body": "class ${TM_FILENAME_BASE}\n  $2\nend$0"
+  },
+
+  "module": {
+    "prefix": "module",
+    "body": "module ${TM_FILENAME_BASE}\n  $2\nend$0"
+  },
+
+  "define_method": {
+    "prefix": "def",
+    "body": "def ${1:method_name}(${2:args})\n  $3\nend$0"
+  },
+
+  "if": {
+    "prefix": "if",
+    "body": "if ${1:condition}\n  $2\nend$0"
+  },
+
+  /* Rails */
+  "translate": {
+    "prefix": "tra",
+    "body": ["t('.$1')$2"],
+    "description": "Translate text."
+  },
+
+  /* RSpec */
+  "describe": {
+    "prefix": "desc",
+    "body": "describe '${1:description}' do\n  $2\nend$0"
+  },
+
+  "context": {
+    "prefix": "con",
+    "body": "context '${1:context}' do\n  $2\nend$0"
+  },
+
+  "it": {
+    "prefix": "it",
+    "body": "it '${1:does}' do\n  $2\nend$0"
+  },
+
+  "itis": {
+    "prefix": "itis",
+    "body": "it { is_expected.${1:to} $2 }$0"
+  },
+
+  "expect": {
+    "prefix": "exp",
+    "body": "expect(subject).${1:to} ${2:eq}(${3:value})"
+  },
+
+  "subject": {
+    "prefix": "sub",
+    "body": "subject { ${1:described_class.}$2 }$0"
+  },
+
+  "let": {
+    "prefix": "let",
+    "body": "let(:${1:symbol}) { $2 }$0"
+  },
+
+  "let!": {
+    "prefix": "let!",
+    "body": "let!(:${1:symbol}) { $2 }$0"
+  },
+
+  "it_behaves_like": {
+    "prefix": "ibl",
+    "body": "it_behaves_like '${1:behavior}'$0"
+  }
+}
