@@ -27,6 +27,7 @@ else
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 fi
 
+ln -s $(pwd)/emacs ~/.config/.emacs.d
 ln -s $(pwd)/nvim ~/.config/nvim
 ln -s $(pwd)/hypr ~/.config/hypr
 ln -s $(pwd)/wezterm/.wezterm.lua ~/.wezterm.lua
