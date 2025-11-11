@@ -1,0 +1,114 @@
+@import "../zenvironment/current/theme/waybar.css";
+
+/* font declared */
+* {
+  font-family: "CaskaydiaMono Nerd Font Mono";
+  font-size: 16px;
+}
+
+#custom-openbracket,
+#custom-closebracket {
+  margin: 0 5px;
+}
+
+window#waybar {
+  background-color: transparent;
+  border-bottom: 0;
+  color: @foreground;
+  transition: background-color 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+
+/* configuring the modules */
+.modules-left {
+  margin: 10px 0 0 10px;
+  padding: 2px 10px 2px 10px;
+  background-color: @background;
+  border: 2px solid @border;
+  border-radius: 4px;
+}
+
+.modules-center {
+  margin: 10px 0 0 0;
+  padding: 2px 10px 2px 10px;
+  background-color: @background;
+  border: 2px solid @border;
+  border-radius: 4px;
+}
+
+.modules-right {
+  margin: 10px 10px 0 0;
+  padding: 2px 10px 2px 10px;
+  background-color: @background;
+  border: 2px solid @border;
+  border-radius: 4px;
+}
+
+button {
+  border: none;
+}
+
+
+#custom-arch:hover {
+  color: @accent;
+}
+
+#custom-powerprofile:hover {
+  color: @accent
+}
+
+#custom-themeswitcher:hover {
+  color: @accent;
+}
+
+/* workspace pannel */
+#workspaces button {
+  min-width: 0;
+  padding: 0 8px 0 8px;
+  background-color: transparent;
+  color: @foreground;
+  border-radius: 0; 
+}
+
+#workspaces button:hover {
+  background-color: @active-background;
+}
+
+#workspaces button.active {
+  color: @accent;
+  background-color: @active-background;
+}
+
+#workspaces button.urgent {
+  background-color: @urgent;
+}
+
+/* center module  */
+#window {
+  padding: 0 5px;
+}
+
+/* Right Island */
+
+/* module general styles */
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio {
+  padding: 0 10px;
+}
+
+#clock:hover,
+#memory:hover,
+#cpu:hover {
+  color: @accent;
+}

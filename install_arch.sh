@@ -30,6 +30,7 @@ fi
 ln -s $(pwd)/emacs ~/.config/.emacs.d
 ln -s $(pwd)/nvim ~/.config/nvim
 ln -s $(pwd)/hypr ~/.config/hypr
+ln -s $(pwd)/waybar ~/.config/waybar
 ln -s $(pwd)/wezterm/.wezterm.lua ~/.wezterm.lua
 ln -s $(pwd)/zed/settings.json ~/.config/zed/settings.json
 ln -s $(pwd)/zed/keymap.json ~/.config/zed/keymap.json

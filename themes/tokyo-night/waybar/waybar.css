@@ -1,0 +1,20 @@
+/* TODO: Gruvbox theme. Move to a theme dir. */
+
+/* @define-color background #2C2A24; */
+/* @define-color second-background #3A372F; */
+/* @define-color text #DDD5C4; */
+/* @define-color borders #A0907A; */
+/* @define-color focused #D08B57; */
+/* @define-color focused2 #BFAA80; */
+/* @define-color color1 #7699A3; */
+/* @define-color color2 #8D7AAE; */
+/* @define-color color3 #78997A; */
+/* @define-color urgent #B05A5A; */
+
+@define-color background #2C2A24;
+@define-color active-background #3A372F;
+@define-color foreground #A9B1D6;
+@define-color border #BB9AF7;
+@define-color accent #7AA2F7;
+@define-color urgent #A0907A;
+
