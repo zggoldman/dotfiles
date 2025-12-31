@@ -1,0 +1,9 @@
+font-family = "CaskaydiaMono Nerd Font Mono"
+font-size = 16
+theme = TokyoNight
+background-opacity = 0.9
+
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+

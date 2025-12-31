@@ -6,7 +6,8 @@ sudo pacman -S --needed \
     neovim \
     emacs \
     zed \
-    nautilus
+    nautilus \
+    ghostty
 
 yay -S --needed wezterm-git
 
@@ -28,9 +29,10 @@ else
 fi
 
 ln -s $(pwd)/emacs ~/.config/.emacs.d
-ln -s $(pwd)/nvim ~/.config/nvim
-ln -s $(pwd)/hypr ~/.config/hypr
-ln -s $(pwd)/waybar ~/.config/waybar
+ln -s $(pwd)/ghostty ~/.config
+ln -s $(pwd)/nvim ~/.config
+ln -s $(pwd)/hypr ~/.config
+ln -s $(pwd)/waybar ~/.config
 ln -s $(pwd)/themes/tokyo-night ~/.config/zenvironment/current/theme
 ln -s $(pwd)/wezterm/.wezterm.lua ~/.wezterm.lua
 ln -s $(pwd)/zed/settings.json ~/.config/zed/settings.json
