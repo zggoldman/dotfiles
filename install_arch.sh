@@ -38,3 +38,6 @@ ln -s $(pwd)/wezterm/.wezterm.lua ~/.wezterm.lua
 ln -s $(pwd)/zed/settings.json ~/.config/zed/settings.json
 ln -s $(pwd)/zed/keymap.json ~/.config/zed/keymap.json
 ln -s $(pwd)/zed/snippets ~/.config/zed/snippets
+
+ln -s $(pwd)/local/bin/* ~/.local/bin
+ln -s $(pwd)/local/share ~/.local/share/zenvironment
