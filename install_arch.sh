@@ -15,7 +15,7 @@ yay -S --needed \
 
 # Intall hyprland extras
 # TODO: Check that we are using hyprland
-sudo pacman -S -needed
+sudo pacman -S --needed \
     hyprshot \
     hyprlock \
     hypridle \
