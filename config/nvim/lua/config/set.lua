@@ -25,6 +25,7 @@ vim.opt.scrolloff = 8
 
 vim.opt.updatetime = 50
 
+vim.opt.cursorline = true
 vim.opt.colorcolumn = "81,121"
 
 vim.o.mousemoveevent = true
