@@ -9,7 +9,9 @@ sudo pacman -S --needed \
     nautilus \
     ghostty
 
-yay -S --needed wezterm-git
+yay -S --needed \
+  xdg-terminal-exec \
+  wezterm-git
 
 # Intall hyprland extras
 # TODO: Check that we are using hyprland
