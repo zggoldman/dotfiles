@@ -130,11 +130,7 @@ return {
             })
 
             require('mason-lspconfig').setup({
-                ensure_installed = {
-                    'ts_ls',
-                    'ruby_lsp',
-                    'sorbet'
-                },
+                ensure_installed = {},
                 handlers = {
                     -- this first function is the "default handler"
                     -- it applies to every language server without a "custom handler"
