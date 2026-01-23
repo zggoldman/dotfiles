@@ -28,16 +28,16 @@ else
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 fi
 
-ln -s $(pwd)/emacs ~/.config/.emacs.d
-ln -s $(pwd)/ghostty ~/.config
-ln -s $(pwd)/nvim ~/.config
-ln -s $(pwd)/hypr ~/.config
-ln -s $(pwd)/waybar ~/.config
-ln -s $(pwd)/themes/tokyo-night ~/.config/zenvironment/current/theme
-ln -s $(pwd)/wezterm/.wezterm.lua ~/.wezterm.lua
-ln -s $(pwd)/zed/settings.json ~/.config/zed/settings.json
-ln -s $(pwd)/zed/keymap.json ~/.config/zed/keymap.json
-ln -s $(pwd)/zed/snippets ~/.config/zed/snippets
+ln -sfn $(pwd)/config/emacs ~/.config/.emacs.d
+ln -sfn $(pwd)/config/ghostty ~/.config
+ln -sfn $(pwd)/config/nvim ~/.config
+ln -sfn $(pwd)/config/hypr ~/.config
+ln -sfn $(pwd)/config/waybar ~/.config
+ln -sfn $(pwd)/themes/tokyo-night ~/.config/zenvironment/current/theme
+ln -sfn $(pwd)/config/wezterm/.wezterm.lua ~/.wezterm.lua
+ln -sfn $(pwd)/config/zed/settings.json ~/.config/zed/settings.json
+ln -sfn $(pwd)/config/zed/keymap.json ~/.config/zed/keymap.json
+ln -sfn $(pwd)/config/zed/snippets ~/.config/zed/snippets
 
-ln -s $(pwd)/local/bin/* ~/.local/bin
-ln -s $(pwd)/local/share ~/.local/share/zenvironment
+ln -sfn $(pwd)/local/bin/* ~/.local/bin
+ln -sfn $(pwd)/local/share ~/.local/share/zenvironment
