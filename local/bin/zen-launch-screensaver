@@ -30,21 +30,21 @@ for m in $(hyprctl monitors -j | jq -r '.[] | .name'); do
     hyprctl dispatch exec -- \
       alacritty --class=org.zenvironment.screensaver \
       --config-file ~/.local/share/zenvironment/screensaver/alacritty.toml \
-      -e run-screensaver
+      -e zen-run-screensaver
     ;;
   *ghostty*)
     hyprctl dispatch exec -- \
       ghostty --class=org.zenvironment.screensaver \
       --config-file=~/.local/share/zenvironment/screensaver/ghostty \
       --font-size=18 \
-      -e run-screensaver
+      -e zen-run-screensaver
     ;;
   *kitty*)
     hyprctl dispatch exec -- \
       kitty --class=org.zenvironment.screensaver \
       --override font_size=18 \
       --override window_padding_width=0 \
-      -e run-screensaver
+      -e zen-run-screensaver
     ;;
   *)
     notify-send "✋  Screensaver only runs in Alacritty, Ghostty, or Kitty"
