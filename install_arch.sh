@@ -7,7 +7,8 @@ sudo pacman -S --needed \
     emacs \
     zed \
     nautilus \
-    ghostty
+    ghostty \
+    yq
 
 yay -S --needed \
   xdg-terminal-exec \
@@ -31,6 +32,7 @@ else
 fi
 
 ln -sfn $(pwd)/config/emacs ~/.config/.emacs.d
+ln -sfn $(pwd)/config/btop ~/.config
 ln -sfn $(pwd)/config/ghostty ~/.config
 ln -sfn $(pwd)/config/nvim ~/.config
 ln -sfn $(pwd)/config/hypr ~/.config

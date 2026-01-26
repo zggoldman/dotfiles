@@ -1,4 +1,4 @@
-@import "../zenvironment/current/theme/waybar/waybar.css";
+@import "../zenvironment/current/theme/waybar.css";
 
 /* font declared */
 * {
@@ -75,7 +75,7 @@ button {
   padding: 0 8px 0 8px;
   background-color: transparent;
   color: @foreground;
-  border-radius: 0; 
+  border-radius: 0;
 }
 
 #workspaces button:hover {
@@ -84,12 +84,12 @@ button {
 
 #workspaces button.active {
   color: @accent;
-  background-color: @active-background;
+  /* background-color: @active-background; */
 }
 
-#workspaces button.urgent {
-  background-color: @urgent;
-}
+/* #workspaces button.urgent { */
+/*   background-color: @urgent; */
+/* } */
 
 /* center module  */
 #window {

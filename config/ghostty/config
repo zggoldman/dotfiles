@@ -1,7 +1,13 @@
+# Dynamic theme colors
+config-file = ?"~/.config/zenvironment/current/theme/ghostty.conf"
+
 font-family = "CaskaydiaMono Nerd Font Mono"
 font-size = 16
-theme = TokyoNight
+# theme = TokyoNight
 background-opacity = 0.95
+window-theme = ghostty
+window-padding-x = 14
+window-padding-y = 14
 
 cursor-style = block
 cursor-style-blink = false
